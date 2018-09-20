@@ -1,6 +1,6 @@
 language: shell
 sudo: false
 script:
-  - bash -c 'if [ ! -f *.sh ]; then >&2 echo "FAIL: There are no .sh files in the directory."; exit 1; fi' 
-  - find . -name '*.sh' -exec shellcheck {} \; 
+  - find . -type f -name "*.sh" | grep '.' || ( echo ERROR No sh files found. && exit 1 )
+  - for file in $(find . -type f -name "*.sh"); do shellcheck $file; done;
 
