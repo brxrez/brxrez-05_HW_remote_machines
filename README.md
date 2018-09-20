@@ -1,9 +1,9 @@
 # Working on remote servers homework assignment for BIOL422/423
-## Due as a pull request on September 23, 2018 before 11:59 pm
+## Due as a pull request on September 25, 2018 before 11:59 pm
 
 The **goal of this assignment** is to get you to get more practice writing bash scripts on the command line, doing so in the context of a version-controlled workflow, this time entirely on a remote server, and submitting your work as a Pull Request on GitHub.
 
-You will write one bash script and one `YYYY-MM-DD_fasta_QC_notes.md` text file for this assignment. The script will produce some summary information about a larger set of fasta files, and you will store the output of this script to a text file called `YYYY-MM-DD_fasta_QC_log.txt`. You will need to write this script to accept and parse command line arguments and summarize them using a for loop.
+You will write one bash script and one `YYYY-MM-DD_fasta_QC_notes.md` text file for this assignment. The script will produce some summary information about a larger set of fasta files, and you will store the output of this script in a text file called `YYYY-MM-DD_fasta_QC_log.txt`. You will need to write this script to accept and parse command line arguments and summarize them using a for loop.
 
 Please follow the instructions carefully and read them all before getting started.
 
@@ -14,7 +14,7 @@ This second assignment will be worth 20 points. The grading breakdown will be as
 * 3 points - Appropriate use of git to version control the steps, including adding and committing the appropriate files at the specific steps below, and writing informative and appropriately formatted commit messages
 * 4 points - Passes Travis CI automated style checks
 
-You must submit your work as a Pull Request to the class organization ('https://github.com/2018-usfca-biol-422-fall') on GitHub by 11:59 pm on Sunday, September 23 for full credit. Late assignments will not be accepted, since we will be peer reviewing the code after it is submitted.
+You must submit your work as a Pull Request to the class organization ('https://github.com/2018-usfca-biol-422-fall') on GitHub by 11:59 pm on Tuesday, September 25 for full credit. Late assignments will not be accepted, since we will be peer reviewing the code after it is submitted.
 
 Steps:
 
