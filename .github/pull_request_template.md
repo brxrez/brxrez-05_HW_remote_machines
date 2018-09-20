@@ -18,7 +18,7 @@ $ ls -aF
 2018-09-23_fasta_QC_notes.md
 README.md # that's this file
 fasta_QC_checks.sh
-code/ # don't need to add or commit
+data/ # don't need to add or commit
 ```
 
 
