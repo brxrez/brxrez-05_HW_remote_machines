@@ -25,11 +25,12 @@ echo the number of sequences in the file, and the
 echo sequence identifier lines sorted alphabetically. 
 
 echo 
-echo "#############################################################################"
+echo "##################################################################"
 
 echo 
 
 # Generating for loop for fasta file sequences
+
 for file in "$@"
 do
 	FILENAME="$file"
@@ -37,9 +38,19 @@ do
 	SEQUENCE_LIST=$(bioawk -c fastx '(length($seq) > 1) {print ">"$name}' "$file" | sort) 
 	SEQUENCE_COUNT=$(bioawk -c fastx '(length($seq) > 1) {print ">"$name}' "$file" | wc -l)
 	echo Output for "$FILENAME":
+	echo
 	echo Size: "$FILE_SIZE"
+	echo
 	echo First three lines: 
 	echo -------------------
 	head -3 $file
+	echo 
+	echo Last three lines:
 	tail -3 $file
+	echo 
+	echo Number of sequences: "$SEQUENCE_COUNT"
+	echo
+	echo Sequence names:
+	echo "$SEQUENCE_LIST"
 done 
+
