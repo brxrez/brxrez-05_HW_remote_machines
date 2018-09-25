@@ -8,13 +8,15 @@
 
 # echo that this is a log file complied from fasta files
 echo Generating log file from fasta files
-
-# Display message indicating what will be presented
+echo 
+# Display message indicating what will be presented and what the script is capable of
 echo Output from preliminary quality control checks on selected fasta files 
 
 echo
-# echo the date and time of access 
-date +"%y-%m-%d %T"
+# echo the date and time of access
+# Date command will display the date in time zone on which
+# the unix/linux OS is configured 
+date +"%Y-%m-%d %T"
 
 echo  
 
@@ -25,11 +27,12 @@ echo the number of sequences in the file, and the
 echo sequence identifier lines sorted alphabetically. 
 
 echo 
-echo "##################################################################"
+echo "################################################################"
 
 echo 
 
-# Generating for loop for fasta file sequences
+# Creating for loop for fasta file sequences
+# It expects any number of fasta files as input
 
 for file in "$@"
 do
@@ -46,6 +49,7 @@ do
 	head -3 $file
 	echo 
 	echo Last three lines:
+	echo ------------------- 
 	tail -3 $file
 	echo 
 	echo Number of sequences: "$SEQUENCE_COUNT"
