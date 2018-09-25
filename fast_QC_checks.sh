@@ -45,11 +45,11 @@ do
 	echo Size: "$FILE_SIZE"
 	echo
 	echo First three lines: 
-	echo -------------------
+	echo -------------------------
 	head -3 $file
 	echo 
 	echo Last three lines:
-	echo ------------------- 
+	echo -------------------------
 	tail -3 $file
 	echo 
 	echo Number of sequences: "$SEQUENCE_COUNT"
