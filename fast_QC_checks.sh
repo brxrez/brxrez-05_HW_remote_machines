@@ -1,6 +1,6 @@
-# !/bin/bash 
+#!/bin/bash 
 # A script that condenses information about fasta files 
-# and produces output. 
+# and produces output 
 
 # Brian Rezende
 # brezende@dons.usfca.edu
