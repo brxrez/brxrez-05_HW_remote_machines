@@ -46,11 +46,11 @@ do
 	echo
 	echo First three lines: 
 	echo -------------------------
-	head -3 $file
+	head -3 "$file"
 	echo 
 	echo Last three lines:
 	echo -------------------------
-	tail -3 $file
+	tail -3 "$file"
 	echo 
 	echo Number of sequences: "$SEQUENCE_COUNT"
 	echo
